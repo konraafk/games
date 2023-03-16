@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="screen">
+         <h1 class="title"> Aim Training</h1>
+
+        <button class="start" id="start">Начать игру </button> 
+    </div>
+
+    <div class="screen">
+        <h1 class="title">
+            Выберите время
+        </h1>
+        <ul class="time-list" id="time-list"> 
+            <li><button class="time-btn" data-time="10">10sec</button>
+                <div class="btn__circle1" id="btn__circle"></div>
+                <div class="btn__circle2" id="btn__circle"></div>
+                <div class="btn__circle3" id="btn__circle"></div>
+                <div class="btn__circle4" id="btn__circle"></div>
+                <div class="btn__circle5" id="btn__circle"></div>
+                <div class="btn__circle6" id="btn__circle"></div>
+                <div class="btn__circle7" id="btn__circle"></div>
+                <div class="btn__circle8" id="btn__circle"></div>
+                <div class="btn__circle9" id="btn__circle"></div>
+
+            </li>
+
+            <li><button class="time-btn" data-time="20">20sec</button></li>
+            <li><button class="time-btn" data-time="30">30sec</button></li>
+            <li><button class="time-btn" data-time="40">40sec</button></li>
+             </ul>
+        
+    </div>
+    <div class="screen">
+        <h3>Осталось <span id="time">00:00</span></h3>
+        <div class="board" id="board">
+            
+        </div>
+    </div>
+ 
+    <script src="./script.js"></script>
+</body>
+</html>

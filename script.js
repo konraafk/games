@@ -3,6 +3,9 @@ const screens = document.querySelectorAll('.screen')
 const timeList = document.querySelector('#time-list')
 const timeEl = document.querySelector('#time')
 const board =  document.querySelector('#board')
+const audio = new Audio('./audio/00171.mp3')
+audio.volume = 0.3;
+
 
 let time = 0 
 let score = 0
@@ -21,8 +24,8 @@ if(event.target.classList.contains('time-btn')){
 }
     event.preventDefault()
     screens[1].classList.add('up')
+    audio.play()
     startGame()
-
 })
 
  let decriseTime = () => {
